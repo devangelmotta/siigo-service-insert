@@ -1,5 +1,5 @@
 const express = require('express');
-const userRoutes = require('./user.route');
+const productRoutes = require('./product.route');
 
 const router = express.Router();
 
@@ -13,6 +13,6 @@ router.get('/status', (req, res) => res.send('OK'));
  */
 router.use('/docs', express.static('docs'));
 
-router.use('/products', userRoutes);
+router.use('/products', productRoutes);
 
 module.exports = router;

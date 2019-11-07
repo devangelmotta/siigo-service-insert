@@ -10,8 +10,6 @@ const routes = require('../api/routes/v1');
 const { logs } = require('./vars');
 const strategies = require('./passport');
 const error = require('../api/middlewares/error');
-const generateCsv = require("../api/utils/generate-csv");
-generateCsv();
 
 /**
 * Express instance
